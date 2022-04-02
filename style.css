@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+:root {
+    --Verydarkdesaturatedblue: hsl(238, 29%, 16%);
+    --Softred: hsl(14, 88%, 65%);
+    --Softviolet: hsl(273, 75%, 66%);
+    --Softblue: hsl(240, 73%, 65%);
+    --Verydarkgrayishblue: hsl(237, 12%, 33%);
+    --Darkgrayishblue: hsl(240, 6%, 50%);
+    --Lightgrayishblue: hsl(240, 5%, 91%);
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    background-color: var(--Softviolet);
+    background: -webkit-linear-gradient(top right, var(--Softviolet), var(--Softblue));
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+   
+}
+
+.container {
+    width: 928px;
+    height: 512px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 130px auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.image-container {
+    width: 462px;
+    height: 505px;
+    overflow: hidden;
+}
+
+.pattern {
+    position: relative;
+    width: 150%;
+    height: 150%;
+    z-index: 1;
+    top: -540px;
+    right: 330px;
+    transform: rotate(4deg) skew(8deg);
+}
+
+.woman-desktop {
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    top: 90px;
+    right: 80px;
+}
+
+.box-desktop {
+    width: 30%;
+    margin-top: 130px;
+    margin-left: -92px;
+    z-index: 3;
+    position: absolute;
+}
+
+.text-container {
+    display: block;
+    height: 100%;
+
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 35px;
+    margin-top: 70px;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    border-bottom-style: dotted;
+    font-weight: 400;
+    font-size: 14px;
+    padding-bottom: 15px;
+    margin-top: 15px;
+    width: 80%;
+    color: var(--Darkgrayishblue);
+
+}
+
+.question span {
+    margin-right: 10px;
+}
+
+.one {
+    margin-top: 40px;
+}
+
+.question:hover {
+    cursor: pointer;
+    color: var(--Softred);
+}
+
+
+.answer {
+    display: none;
+}
+
+.active-question {
+    color: var(--Verydarkgrayishblue);
+    border-style: none;
+
+}
+.active.question span {
+    transform: rotate(180deg);
+} 
+
+
+.active-answer {
+    display: block;
+    width: 80%;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--Lightgrayishblue);
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
